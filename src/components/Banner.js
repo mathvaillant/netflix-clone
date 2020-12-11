@@ -19,7 +19,6 @@ function Banner() {
       const data = responseData.results[Math.floor(Math.random() * responseData.results.length - 1)];
 
       setMovie(data);
-      console.log(data);
 
       return data;
     }
@@ -27,6 +26,10 @@ function Banner() {
     // call the async function
     fetchData();
   }, []);
+
+  function truncate(str, n) {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  }
 
   return (
     <header className='banner'
@@ -45,9 +48,10 @@ function Banner() {
           <button className="banner__button">MyList</button>
         </div>
         <h1 className="banner__desc">
-          {movie?.overview}
+          {truncate(movie?.overview, 150)}
         </h1>
       </div>
+      <div className="banner__fadeBottom" />
     </header>
   )
 }
