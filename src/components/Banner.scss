@@ -1,3 +1,10 @@
+// RESPONSIVE DESIGN QUERIES
+@media screen and (max-width: 560px){
+  .banner__contents {
+    margin-left: 1.2rem !important;
+  }
+}
+
 .banner {
   color: #fff;
   object-fit: contain;
@@ -10,6 +17,7 @@
       font-size: 3rem;
       font-weight: 800;
       padding-bottom: 0.3rem;
+      text-shadow: 1px 1px 4px #000;
     }
     .banner__desc {
       width: 45rem;
@@ -18,6 +26,7 @@
       font-size: 0.8rem;
       max-width: 360px;
       height: 80px;
+      text-shadow: 1px 1px 4px #000;
     }
     .banner__buttons {
       .banner__button {

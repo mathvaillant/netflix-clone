@@ -15,4 +15,7 @@ body {
 
 .app {
   background-color: #111;
+  .indiana-scroll-container--hide-scrollbars {
+    overflow: hidden;
+  }
 }
